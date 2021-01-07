@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<title>PRODUCT ANALYSIS</title>
+</head>
+<style media="screen">
+	.carousel-cell {
+		width: 100%;
+	}
+
+	/* cell number */
+	.carousel-cell:before {
+		display:block;
+	}
+</style>
+<body style="background-color: salmon">
+<body>
+
+<header>
+	    <h1 class="w3-center" style="font-style: bold", align="center">PRODUCT ANALYSIS</h1>
+	</header>
+
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+    	{% for customer in image_names %}
+           <div class="carousel-cell">
+    	        <img  class = 'w3-image' src="{{url_for('static',filename=customer)}}" width="1250" height="650">
+            </div>
+	    {% endfor %}
+    </div>
+
+
+<p>INSIGHTS:</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>    	
+
+</body>
+<hr>
+<footer>
+<a href="/" target="_blank">"HOME"</a>
+</footer>
+</body>
+</html>

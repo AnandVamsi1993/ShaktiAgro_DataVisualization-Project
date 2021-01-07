@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<title>SUPPLIER ANALYSIS</title>
+</head>
+<style media="screen">
+	.carousel-cell {
+		width: 100%;
+	}
+
+	/* cell number */
+	.carousel-cell:before {
+		display:block;
+	}
+</style>
+<body style="background-color: salmon">
+<body>
+
+<header>
+	    <h1 class="w3-center" style="font-style: bold", align="center">SUPPLIER EXPENSES</h1>
+	</header>
+
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+    	{% for i in image_names %}
+           <div class="carousel-cell">
+    	        <img  class = 'w3-image' src="{{url_for('static',filename=i)}}" width="1250" height="650">
+            </div>
+	    {% endfor %}
+    </div>
+
+
+<p>Insights</p>
+<br>
+<br>
+<br>
+<header>
+	    <h1 class="w3-center" style="font-style: bold", align="center">SUPPLIER ANALYSIS</h1>
+	</header>
+	<div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='s05.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s06.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+	    
+    </div>
+<p>Insights</p>
+<br>
+<br>
+<br>
+<header>
+	    <h1 class="w3-center" style="font-style: bold", align="center">SUPPLIER PRODUCT ANALYSIS</h1>
+	</header>
+	<div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='s07.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s08.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s09.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s10.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s11.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s12.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+	    
+    </div>
+<p>Insights</p>
+<br>
+<br>
+<header>
+	    <h2 class="w3-center" style="font-style: bold", align="center">MS SCRAP</h2>
+	</header>
+	<div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='s13.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s14.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s15.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s16.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+    </div>
+<p>Insights</p>
+<br>
+<header>
+	    <h2 class="w3-center" style="font-style: bold", align="center">SECTION STEEL</h2>
+	</header>
+	<div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='s17.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s18.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s19.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s20.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+    </div>
+<p>Insights</p>
+<br>
+<header>
+	    <h2 class="w3-center" style="font-style: bold", align="center">WIRE-7217</h2>
+	</header>
+	<div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='s21.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s22.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s23.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s24.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+    </div>
+<p>Insights</p>
+<br>  
+<header>
+	    <h2 class="w3-center" style="font-style: bold", align="center">HEAVY SIDE CUTTING</h2>
+	</header>
+	<div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='s25.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s26.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s27.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s28.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+    </div>
+<p>Insights</p>
+<br>
+<header>
+	    <h1 class="w3-center" style="font-style: bold", align="center">OVERHEAD COST</h1>
+	</header>
+	<div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='s29.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='s30.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+	    
+    </div>
+<p>Insights</p>
+<br>                   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>    	
+
+</body>
+<hr>
+<footer>
+<a href="/" target="_blank">"HOME"</a>
+</footer>
+</body>
+</html>
