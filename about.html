@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHAKTI AGRO- ABOUT US</title>
+</head>
+<body style="background-color: salmon">
+
+<body>
+	<header>
+	    <h1 style="font-style: bold", align="center">INTRODUCTION</h1>
+	</header>
+	<p>Shakti Agro Industries commenced business in March 2017. It is a manufacturing and trading firm in Hosur, Tamil Nadu. It is jointly owned by 3 stakeholders. The company originally dealt in the production of Section Steel and Binding Wire.Shakti Agro Industries is building its own in-house plant for manufacturing accessories for farming equipments for the agriculatural industry. Majority of Shakti Agro Industries customers are located within the 4 states(Karnataka, Andhra Pradesh, Tamil Nadu and Kerala) of Southern India. It aims to give emplyment to the local residents.The company is in the process of setting up a galvanizing plant for wire industry which has a very huge untapped market. The current supply is supported from Eastern India. Shakti Agro Industries is also setting up a plant to produce rota vator blades which is used for cultivation in the agricultural industry. There is an exponential increase in demand for the product due to limited supply in Southern India. </p>
+
+	<hr width="50%" size="8" color="lightslategray" align="center" >
+
+	<header>
+		<b>PRODUCT RANGE</b>
+    </header>
+	<p></p>
+	<p>SECTION STEEL-It is Mild Steel Section and is supplied to the local steel fabricators throug traders at competitive prices.It primarily consists of MS SECTION, MS FLATS and MS BAR. </p>
+	<p>BINDING WIRE- It is used in the construction industry. It primarily consists of Wire-7217 and HB Wire</p>
+	<p>Shovel-The company produces shovel blades using special alloys to withstand longer durability. It is used in the cultivator machine.It currently consists of Tiller Shovel.</p>
+    <br>
+	<br>
+	<br>
+	{% for imagelist in imagelist %}
+	<img src="{{url_for('static',filename=imagelist)}}" width="600" height='400'>
+	{% endfor %}
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<hr>	
+<p><small>CONTACT DETAILS:<small></small></p>
+<p><small><a href="https://m.facebook.com/profile.php?id=100000367762328&ref=content_filter">RAMESH AGARWAL</a></small></p>
+<p><small>PHONE NUMBER: +91 9341100001</small></p>
+<footer>
+<a href="http://127.0.0.1:5000/" target="_blank">"HOME"</a>
+</footer>
+</body>
+</html>

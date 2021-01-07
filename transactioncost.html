@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<title>TRANSACTION COST ANALYSIS</title>
+</head>
+<style media="screen">
+	.carousel-cell {
+		width: 100%;
+	}
+
+	/* cell number */
+	.carousel-cell:before {
+		display:block;
+	}
+</style>
+<body style="background-color: salmon">
+<body>
+
+<header>
+	    <h1 class="w3-center" style="font-style: bold", align="center">TRANSACTION COST ANALYSIS</h1>
+	</header>
+
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": false }'>
+    	{% for chetali in image_names %}
+           <div class="carousel-cell">
+    	        <img  class = 'w3-image' src="{{url_for('static',filename=chetali)}}" width="1550" height="650">
+            </div>
+	    {% endfor %}
+    </div>
+
+
+<p>Insights</p>
+<p> As Transaction cost is directly correlated to the revenue generated and number of transactions, one can notice a similar trend with the Quarterly revenue graph. Variable cost has largely remained constant throughout all the quarters.'Scrap Generated production cost' is understandably highest when the total revenue generated is the highest i.e. in Q2. Salary and Labor charges are the highest in Q1 followed by a dip in Q2.</p>
+<br>
+<br>
+<br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+<hr>
+<footer>
+<a href="/" target="_blank">"HOME"</a>
+</footer>
+</html>

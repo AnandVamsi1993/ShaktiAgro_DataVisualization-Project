@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<title>PRODUCT ANALYSIS</title>
+</head>
+<style media="screen">
+	.carousel-cell {
+		width: 100%;
+	}
+
+	/* cell number */
+	.carousel-cell:before {
+		display:block;
+	}
+</style>
+<body style="background-color: salmon">
+<body>
+
+<header>
+	    <h1 class="w3-center" style="font-style: bold", align="center">PRODUCT ANALYSIS</h1>
+	</header>
+
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+    	{% for customer in image_names %}
+           <div class="carousel-cell">
+    	        <img  class = 'w3-image' src="{{url_for('static',filename=customer)}}" width="1250" height="650">
+            </div>
+	    {% endfor %}
+    </div>
+<p><b>Insights</b></p>
+<ul>
+	<p>Fig 1.0-MS Bar, MS Section and MS Scrap are among the top revenue generators for Shakti Agro Industries. MS Billets contributed Rs.4.0 cr to revenue in Q2FY19-20 and thus holding a 50% share in the total revenue generated for the quarter.MS Billets is the only trading product that holds a significant share in the company's revenue. MS Flats had a steady contribution of Rs. 1.5 cr each in Q1FY19-20, Q3FY19-20 and Q4FY19-20.</p>
+	<p>Fig 2.0- The most number of transacations are primarily belonging to MS BAR. In Q2FY19-20, MS Billets contributed immesnsely to the revenues with proportionately lesser number of transactions. This indicates that the rate per unit of MS Billets is relatively higher than MS Bar. The graph shows that Wire-7217 has a very insignificant impact on the business in  terms of the revenue generated and the number of quarterly transactions. Similarly, number of transactions is much higher for MS Flats when compared to the revenue generatred for the same. Hence, the rate per tonne of MS Flats is considerably lower.</p>
+	<p>Fig 3.0- MS Bar is the most revenue generating product for the busines and holds a 25.2% stake. It is followed by MS Section at 23.8% and MS Billets at 21.4%. MS Flats contributes 10.0% to the top line of the business. Wire-7217 has a trivial share of 3.0%. Hence, the company generates nearly 68% revenue from its manufacturing division. </p>
+	<p>Fig 4.0- In terms of the number of transactions, MS Bar tops the list with a 28.2% portion, followed by MS Flats at 23.2% and MS Section at 22.9%. Tiller Shovel has very few transactions, holding a 1.8% share. Binding Wire accounts for 6.7% of the total number of transactions in 2019-20. This indicates that the business is more inclined towards its manufacturing options as compared to the trading division. Shakti Agro Industries has a higher revenue share of the manufacturing division when compared to the number of transacions generated for the year for the same division. This implies that the revenue of the trading products(excluding MS Billets) is relatively lower when compared to the revenue of manufacturing products.</p>
+	<p>Fig 5.0-MS Section, Tiller Shovel and MS Bar are the three products which account for maximum freight outward charges. Wire-7217 and MS Flats also have a notable contribution in this segment. </p>
+	<p>Fig 6.0- In the aforementioned analysis, we can see that MS Bar has been a significant revenue contributor. However, the margin generated per tonne for the product is negligible. Higest contributor to the margin per tonne has been MS Billets at Rs.6000 followed by Wire-7217 at approx. Rs.5750. The number of transactions and the revenue generated from Wire holds a very insignificant share. Margin per tonne for MS Section is in direct correlation with the revenue generated and number of transactions for the same. MS Scrap, Heavy Side Cutting and Tiller Shovel have reported negative margins per tonne of the respective product.MS Flats has reported a nearly Rs.750 margin per tonne.</p>
+	<p>Fig 7.0- The following graph shows the overall margin generated from the sales of the products in 2019-20. MS Billets, MS Section, Wire-7217, MS Flats,
+	MS Bar are the only profit generating products of the business. MS Billets is the only trading product that contributes so excessively to the profits and is considered as a cash cow for the business. MS Scrap has been a major cash drain for the business as it has accounted for a loss valued at Rs.20 lk. Trading products like RDS screw do not contribute to the margins.</p>
+	<p>Fig 8.0- MS Billets generated a revenue of nearly Rs.70 lk. The main cause of negative margins in Q3FY19-20 has been due to excessive sale of MS Scrap which is primarily sold at a loss of Rs.2750 per quarter. The company generates its margins only through the sale of Wire and  Coal in Q3FY19-20. MS Bar accounts for top margin only in Q1FY19. MS Flats, Wire and MS Section contribute nearly Rs.20 lk to the Q4FY19-20 margins.  </p>
+
+</ul>
+<br>
+<br>
+<header>
+	    <h1 class="w3-center" style="font-style: bold", align="center">MANUFACTURING AND TRADING PRODUCTS</h1>
+	</header>
+
+    <div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>	
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr73.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr74.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr75.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr76.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr77.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr78.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+     </div>
+<br>
+<br>
+<p><b>Insights</b></p>
+<ul>
+	<p> Fig 17.1 to 17.3 - Q1 and Q4  show profitable margins for manufacturing goods. However, the cost price and revenue generated for the same goods is almost similarn across all quarters. This shows that Q2 and Q3 have not been a profitable time to sell these goods.As we go further, we notice a similar trend with individual products as well. </p>
+	<p> Fig 17.4 to 17.6 - In the case of Trading goods, revenue and cost follow similar trends as Shakti Agro simply resells these tools at a small rate higher than the cost price.</p>
+</ul>
+<header>
+	    <h1 class="w3-center" style="font-style: bold", align="center">PRODUCT ANALYSIS</h1>
+	</header>
+	<header><h2>MS SECTION</h2></header>
+
+    <div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>	
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr01.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr02.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr03.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr04.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr05.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr06.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr07.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr08.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr09.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+     </div>
+
+<p><b>Insights</b></p>
+<ul>
+<p> MS SECTION has the maximum sales in April followed by November, June and May. December is a low season for this product. April also yields the highest profits for MS SECTION.</p>
+
+<p> Although Feb yields less revenue, the no. of transactions in this month are the second highest overall. Customers do not order bulk amounts in Feb despite the unite price being relatively lesser than highest value(in April).</p>
+
+<p> Although November has the second highest sales, Freight charges are not proportional to sales value. This shows customers are more willing to carry products themselves. (One reason might be that freight charges in winters are significantly higher). Customers seem to take good advantage of the low unit price of MS SECTION in November. The no. of units ordered in this month are second highest overall.</p>
+
+<p> Although November is the second highest revenue generating month for MS SECTION, the margins generated are the secind lowest overall. This is due to high TFC and TVC charges.</p>
+
+<p> Because the unit price is so low in Nov, Shakti Agro can come up with pre-orders ( with delivery of products in jan, Feb or April). A 6 month delivery plan ( i.e delivery in April) contracts can be encouraged..This might increase sales in Nov and Dec.</p>
+
+
+
+To maximize revenues from point 2 and 3, Shakti Agro can come up with attractive freight packages to boost sales.
+</ul>
+<header><h2>MS BAR</h2></header>
+
+    <div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>	
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr10.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr11.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr12.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr13.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr14.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr15.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr16.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr17.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr18.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+     </div>
+
+<p><b>Insights</b></p>
+<ul>
+<p>MS BAR generates highest margins in Q1 and Q4. Month wise, April and January were the most profitable months. This is likely due to a higher selling price of the product (40K INR per MT)</p>
+
+<p>Q2 and Q3 have recorded losses from MS BAR purchases.</p>
+
+<p> However, April and Jan are the not the highest grossing months for this product. August and Feb have recorded the highest sales and transaction numbers. This is understandably due to a lower Selling/Market price of the product</p>
+
+<p> Unlike MS SECTION, in the case of MS Bar, Freight charges are the highest in November.</p>
+</ul>
+
+</ul>
+<header><h2>MS FLATS</h2></header>
+
+    <div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>	
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr19.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr20.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr21.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr22.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr23.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr24.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr25.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr26.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr27.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+     </div>
+<p><b>Insights</b></p>
+<ul>
+<p>Similar to MS BAR, MS Flats rcorded profitable business in Q1 and Q4. April and May have been the most profitable months. Ooctober recorded the highest losses.</p>
+
+<p>In terms of revenue, May has the least total sales. This is likely due to a higher market price(41K). August and Feb have recorded the highest revenue and transaction numbers. Margins in these months are very low</p>
+
+<p>Freight Outward charges are the highest in August and November.</p>
+</ul>
+</ul>
+<header><h2>WIRE</h2></header>
+
+    <div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>	
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr28.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr29.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr30.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr31.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr32.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr33.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr34.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr35.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr36.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+     </div>
+
+</ul>
+<ul>
+<p>WIRE had 0 sales in Q1 followed by a linear increase in Q2 and Q4.</p>
+<p>Unlike MS BAR and other products, Wire does not show negative margins. Q4 is the most profitablke quarter. Feb is the most profitable month. Sales is August typically do not show great profit. This is primarily due to lower Selling price.</p>
+<p>Freight charges are proportional to the revenue being generated for Wire</p>
+</ul>
+
+<header><h2>TILLER SHOVEL</h2></header>
+
+    <div class="carousel"  data-flickity='{ "wrapAround": true, "autoPlay": true }'>	
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr37.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr38.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr39.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr40.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr41.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr42.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	       <img src="{{url_for('static', filename='pr43.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+         <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr44.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+                  <div class="carousel-cell">
+    	        
+    	       <img src="{{url_for('static', filename='pr45.png')}}"  width="1550" height="450" align="middle" />
+         </div>
+
+     </div>
+<ul>
+<p>Tiller Shovel, unlike other products, records an overall negative margin throughout all the quarters exclusing Q1.</p>
+<p>Feb recorded negatuve margins worth 1.5L INR.April, May and June were the only months were Tiller Shovel showed profits.</p>
+</ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>    	
+
+</body>
+<hr>
+<footer>
+<a href="/" target="_blank">"HOME"</a>
+</footer>
+</body>
+</html>
