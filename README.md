@@ -1,3 +1,3 @@
 # ShaktiAgro_DataVizProject
 The aim of the project is to analyze the business product transactions of Shakti Agro Industries through data visualization and present it on a web application.This will provide comprehensive data analysis and key insights into the different transactions undertaken by the company in 2019-2020. With the use of Exploratory Data Analysis, this project offers actionable insights in different segments such as Customer and Supplier ecosystem, Profit and Loss Margins and Cost-Benefit Analysis.The data was sourced through the company's resource planning software, Tally. By using different data-entry and pre-processing techniques, the examination was done with Python,HTML and various in-built modules such as Flask, Pandas, Seaborn, Matplotlib, etc.
-hi
+
